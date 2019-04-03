@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site">
+            <li class="site__item">
+              <a class="site__link" href="index.html">Главная</a>
+            </li>
+            <li class="site__item">
+              <a class="site__link site__link--active">Фото и видео</a>
+            </li>
+            <li class="site__item">
+              <a class="site__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site__item">
+              <a class="site__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__wrapper">
+          <a class="page-header__logo" href="index.html">
+            <svg class="page-header__logo page-header__logo--mobile">
+            </svg>
+            <svg class="page-header__logo page-header__logo--tablet">
+            </svg>
+            <svg class="page-header__logo page-header__logo--desktop">
+            </svg>
+          </a>
+        </div>
+      </header>
+      <main class="page-main">
+        <header class="page-main__heading heading">
+          <div class="heading__index heading__index--inside">
+            <img class="heading__image heading__image--inside" src="http://placehold.it/150x100" alt="1">
+          </div>
+          <div class="heading__block">
+            <h1 class="heading__title heading__title--catpion">Фото и видео</h1>
+            <p class="heading__description heading__description--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+        </header>
+        <section class="page-main__photo photo">
+          <h2 class="visually-hidden">Фотографии природы города Седона</h2>
+            <ul class="photo__list">
+              <li class="photo__item photo-block photo-block--header">
+                <a class="photo-block__link" href="#">
+                  <img class="photo-block__image photo-block__image--header" src="http://placehold.it/150x100" alt="1">
+                </a>
+                <div class="photo-block__sign photo-block__sign--header">
+                  <div class="photo-block__description">
+                    <p class="photo-block__title">Неродные просторы</p>
+                    <p class="photo-block__author">Автор фото: Борис</p>
+                  </div>
+                  <div class="photo-block__count">
+                    <button class="photo-block__button" type="button" aria-label="Like">
+                    </button>
+                    <p class="photo-block__numbers">1350</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo__item photo-block photo-block--card">
+                <a class="photo-block__link" href="#">
+                  <img class="photo-block__image" src="http://placehold.it/150x100" alt="1">
+                </a>
+                <div class="photo-block__sign">
+                  <div class="photo-block__description">
+                    <p class="photo-block__title">Местная растительность</p>
+                    <p class="photo-block__author">Автор фото: Сергей</p>
+                  </div>
+                  <div class="photo-block__count">
+                    <button class="photo-block__button" type="button" aria-label="Like">Like
+                    </button>
+                    <p class="photo-block__numbers">143</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo__item photo-block photo-block--card">
+                <a class="photo-block__link" href="#">
+                  <img class="photo-block__image" src="http://placehold.it/150x100" alt="1">
+                </a>
+                <div class="photo-block__sign">
+                  <div class="photo-block__description">
+                    <p class="photo-block__title">Дорога на север</p>
+                    <p class="photo-block__author">Автор фото: Петр</p>
+                  </div>
+                  <div class="photo-block__count">
+                    <button class="photo-block__button" type="button" aria-label="Like">
+                    </button>
+                    <p class="photo-block__numbers">96</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo__item photo-block photo-block--card">
+                <a class="photo-block__link" href="#">
+                  <img class="photo-block__image" src="http://placehold.it/150x100" alt="1">
+                </a>
+                <div class="photo-block__sign">
+                  <div class="photo-block__description">
+                    <p class="photo-block__title">Мост дьявола</p>
+                    <p class="photo-block__author">Автор фото: Антон</p>
+                  </div>
+                  <div class="photo-block__count">
+                    <button class="photo-block__button" type="button" aria-label="Like">
+                    </button>
+                    <p class="photo-block__numbers">254</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </section>
+        <section class="page-main__video video">
+          <h2 class="visually-hidden">Видео-обзор</h2>
+          <p class="video__question">Все еще сомневаетесь?</p>
+          <p class="video__offer">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <div class="video__player player">
+            <div class="player__image">
+              <img class="player__photo" src="http://placehold.it/150x100" alt="1">
+            </div>
+            <div class="player__controls controls">
+              <div class="controls__rewind">
+                <div class="controls__scale"></div>
+                <div class="controls__toggle"></div>
+              </div>
+              <div class="controls__console console">
+                <button class="console__item console__item--repeat" type="button" aria-label="Повтор">
+                </button>
+                <button class="console__item console__item--subtitles" type="button" aria-label="Субтитры">
+                </button>
+                <button class="console__item console__item--screen" type="button" aria-label="Полный экран">
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer page-footer--indent">
+        <b class="page-footer__hashtag">#visitsedona</b>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--twitter button" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в Твиттер">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook button" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы на Ютюб">
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
