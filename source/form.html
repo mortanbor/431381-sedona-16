@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="page-header">
+        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site">
+            <li class="site__item">
+              <a class="site__link" href="index.html">Главная</a>
+            </li>
+            <li class="site__item">
+              <a class="site__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site__item">
+              <a class="site__link site__link--active">Форма отзыва</a>
+            </li>
+            <li class="site__item">
+              <a class="site__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__wrapper">
+          <a class="page-header__logo" href="index.html">
+          </a>
+        </div>
+      </header>
+      <main class="page-main">
+        <header class="page-main__heading heading">
+          <div class="heading__index heading__index--inside">
+            <img class="heading__image heading__image--inside" src="http://placehold.it/150x100" alt="1">
+          </div>
+          <div class="heading__block heading__block--form">
+            <h1 class="heading__title heading__title--catpion">Оставьте свой отзыв</h1>
+            <p class="heading__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+        </header>
+        <form class="page-main form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__block form-block form-block--introduce">
+            <h2 class="form-block__title form-block__title--introduce">Представьтесь:</h2>
+            <ul class="form-block__list">
+              <li class="form-block__item">
+                <label class="form-block__label" for="namefield">Имя*:</label>
+                <input class="form-block__input" type="text" id="namefield" name="first name" placeholder="Петр" required>
+              </li>
+              <li class="form-block__item">
+                <label class="form-block__label" for="lastfield">Фамилия*:</label>
+                <input class="form-block__input" type="text" id="lastfield" name="lastname" placeholder="Иванов" required>
+              </li>
+              <li class="form-block__item">
+                <label class="form-block__label form-block__label--end" for="fatherfield">Отчество:</label>
+                <input class="form-block__input form-block__input--end" type="text" id="fatherfield" name="father name" placeholder="Александрович">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__block form-block form-block--contacts">
+            <h2 class="form-block__title form-block__title--contacts">Контактная информация:</h2>
+            <ul class="form-block__list form-block__list--contacts">
+              <li class="form-block__item form-block__item--contacts form-block__item--telephone">
+                <label class="form-block__label form-block__label--contacts" for="telephonefield"><span>Контактный&#8194;</span> телефон*:</label>
+                <input class="form-block__input form-block__input--contacts" type="tel" id="telephonefield" name="telephone" placeholder="Введите телефон" required>
+              </li>
+              <li class="form-block__item form-block__item--contacts form-block__item--email">
+                <label class="form-block__label form-block__label--contacts" for="e-mailfield">Электронная почта*:</label>
+                <input class="form-block__input form-block__input--contacts" type="email" id="e-mailfield" name="e-mail" placeholder="Введите e-mail" required>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__block form-block form-block--radio">
+            <h2 class="form-block__title form-block__title--radio">Ваше общее впечатление:</h2>
+            <ul class="form-block__list">
+              <li class="form-block__item form-block__item--radio">
+                <input class="visually-hidden form-block__input--radio" type="radio" id="plus-filter" name="impression" value="positive" checked>
+                <label class="form-block__label form-block__label--radio" for="plus-filter">Скорее положительное</label>
+              </li>
+              <li class="form-block__item form-block__item--radio">
+                <input class="visually-hidden form-block__input--radio" type="radio" id="minus-filter" name="impression" value="negative">
+                <label class="form-block__label form-block__label--radio" for="minus-filter">Скорее отрицательное</label>
+              </li>
+              <li class="form-block__item form-block__item--radio">
+                <input class="visually-hidden form-block__input--radio" type="radio" id="hard-filter" name="impression" value="hard">
+                <label class="form-block__label form-block__label--radio" for="hard-filter">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__block form-block form-block--check">
+            <h2 class="form-block__title form-block__title--check">Посещенные достопримечательности:</h2>
+            <ul class="form-block__list form-block__list--check">
+              <li class="form-block__item form-block__item--check">
+                <input class="visually-hidden form-block__input--check" type="checkbox" id="visit-bridge" name="devil bridge" checked>
+                <label class="form-block__label form-block__label--check" for="visit-bridge">Мост Дьявола</label>
+              </li>
+              <li class="form-block__item form-block__item--check">
+                <input class="visually-hidden form-block__input--check" type="checkbox" id="visit-bell" name="mountain bell" checked>
+                <label class="form-block__label form-block__label--check" for="visit-bell">Гора-Колокол</label>
+              </li>
+              <li class="form-block__item form-block__item--check">
+                <input class="visually-hidden form-block__input--check" type="checkbox" id="visit-park" name="slide park" checked>
+                <label class="form-block__label form-block__label--check" for="visit-park">Слайд-парк</label>
+              </li>
+              <li class="form-block__item form-block__item--check">
+                <input class="visually-hidden form-block__input--check" type="checkbox" id="visit-rocks" name="red rocks">
+                <label class="form-block__label form-block__label--check" for="visit-rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__block form-block form-block--comment">
+            <h2 class="form-block__title form-block__title--comment">Опишите свои эмоции:</h2>
+            <label class="visually-hidden" for="message-form">Опишите свои эмоции:</label>
+            <textarea class="form__block__area" id="message-form" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <button class="form__button button" type="submit">Отправить отзыв</button>
+          <p class="form__note">* &#8211; обязательные поля</p>
+        </form>
+      </main>
+      <footer class="page-footer">
+        <b class="page-footer__hashtag">#visitsedona</b>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--twitter button" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в Твиттер">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook button" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы на Ютюб">
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+          </a>
+        </div>
+      </footer>
+      <section class="modal-form modal-form--mistake">
+        <h2 class="modal-form__title modal-form__title--mistake">Что-то пошло не так!</h2>
+        <p class="modal-form__item">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-form__button modal-form__button--mistake button" type="button">Ок</button>
+      </section>
+      <section class="modal-form">
+        <h2 class="modal-form__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-form__item modal-form__item--send">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&#160;ближайшее время мы опубликуем его на сайте.</p>
+        <p class="modal-form__wrapper">
+          <button class="modal-form__button button" type="button">Закрыть окно</button>
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
