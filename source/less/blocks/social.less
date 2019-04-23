@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+
+  width: 150px;
+  margin-bottom: 40px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+
+  background-color: @blue;
+}
+
+.social__link path {
+  fill: @white;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: @hover;
+}
+
+.social__link:active {
+  background-color: @down;
+}
+
+.social__link:active path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    margin-bottom: 0;
+  }
+}

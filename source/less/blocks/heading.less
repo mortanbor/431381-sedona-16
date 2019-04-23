@@ -1,0 +1,302 @@
+.heading {
+  position: relative;
+}
+
+.heading__title,
+.heading__description {
+  .default-style();
+}
+
+.heading__index {
+  position: relative;
+  overflow: hidden;
+}
+
+.heading__index--poster {
+  height: 389px;
+}
+
+.heading__index--poster::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 320px;
+  height: 26px;
+
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.heading__index--inside {
+  height: 158px;
+}
+
+.heading__index--inside::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 320px;
+  height: 26px;
+
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.heading__image--poster {
+  max-width: none;
+  transform: translateX(-29%);
+}
+
+.heading__image--inside {
+  max-width: none;
+  transform: translate(-29%, -59%);
+}
+
+.heading__index .heading__textlogo {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+
+  width: 282px;
+}
+
+.heading__index .heading__sedona {
+  position: absolute;
+  top: 32px;
+  left: 45px;
+
+  width: 230px;
+}
+
+.heading__block {
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+
+  box-sizing: border-box;
+}
+
+.heading__block--poster {
+  padding-top: 40px;
+  padding-bottom: 5px;
+}
+
+.heading__block--indent {
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
+
+.heading__block--form {
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+
+.heading__title {
+  width: 260px;
+  margin: auto;
+  margin-bottom: 29px;
+
+  .title-font();
+  text-align: center;
+}
+
+.heading__title--catpion {
+  margin-bottom: 25px;
+}
+
+.heading__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+
+  text-align: center;
+}
+
+.heading__description--photo {
+  width: 270px;
+  margin: auto;
+}
+
+.heading__description--poster {
+  line-height: 26px;
+}
+
+@media (min-width: @tablet-width) {
+  .heading {
+    width: 768px;
+  }
+
+  .heading__index--poster {
+    height: 520px;
+  }
+
+  .heading__index--inside {
+    height: 291px;
+  }
+
+  .heading__index--poster::after {
+    width: 768px;
+    height: 56px;
+
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+
+  .heading__index--inside::after {
+    width: 768px;
+    height: 56px;
+
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+
+  .heading__image--poster {
+    width: auto;
+    min-height: 520px;
+    transform: none;
+  }
+
+  .heading__image--inside {
+    width: auto;
+    min-height: 291px;
+    transform: translate(0, -44%);
+  }
+
+  .heading__index .heading__textlogo {
+    top: 78px;
+    left: 154px;
+
+    width: 460px;
+  }
+
+  .heading__index .heading__sedona {
+    position: absolute;
+    top: 93px;
+    left: 156px;
+
+    width: 460px;
+  }
+
+  .heading__block {
+    padding-top: 73px;
+    padding-right: 60px;
+    padding-bottom: 67px;
+    padding-left: 60px;
+  }
+
+  .heading__block--poster {
+    padding-top: 50px;
+    padding-bottom: 48px;
+    box-sizing: border-box;
+  }
+
+  .heading__block--indent {
+    padding-bottom: 75px;
+  }
+
+  .heading__block--form {
+    padding-bottom: 73px;
+  }
+
+  .heading__title {
+    width: 450px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  .heading__title--catpion {
+    width: 450px;
+
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
+
+    margin-bottom: 32px;
+  }
+
+  .form-block__title--radio {
+    margin-left: 0;
+  }
+
+  .heading__description {
+    width: 440px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heading__description--poster {
+    width: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .heading {
+    width: 1200px;
+  }
+
+  .heading__index--inside {
+    height: 300px;
+  }
+
+  .heading__index--poster::after {
+    width: 1200px;
+
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+  }
+
+  .heading__index--inside::after {
+    width: 1200px;
+
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+  }
+
+  .heading__index .heading__textlogo {
+    top: 78px;
+    left: 369px;
+  }
+
+  .heading__index .heading__sedona {
+    top: 103px;
+    left: 370px;
+  }
+
+  .heading__image--inside {
+    transform: translate(0, -41%);
+  }
+
+  .heading__block {
+    padding-top: 115px;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-bottom: 70px;
+  }
+
+  .heading__block--poster {
+    padding-top: 48px;
+    padding-bottom: 50px;
+  }
+
+  .heading__block--form {
+    padding-top: 112px;
+    padding-bottom: 58px;
+  }
+}
