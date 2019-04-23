@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <header class="page-header">
-        <nav class="page-header__nav main-nav">
+        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -28,23 +29,12 @@
         </nav>
         <div class="page-header__wrapper">
           <a class="page-header__logo">
-            <svg class="page-header__logo page-header__logo--mobile">
-            </svg>
-            <svg class="page-header__logo page-header__logo--tablet">
-            </svg>
-            <svg class="page-header__logo page-header__logo--desktop">
-            </svg>
           </a>
         </div>
       </header>
       <main class="page-main">
         <header class="page-main__heading heading">
           <div class="heading__index heading__index--poster">
-            <picture>
-              <img class="heading__image heading__image--poster" src="http://placehold.it/150x100" alt="1">
-            </picture>
-            <svg class="heading__textlogo">
-            </svg>
           </div>
           <div class="heading__block heading__block--poster">
             <h1 class="heading__title">Седона 	&#8211; небольшой городок в Аризоне, заслуживающий большего!</h1>
@@ -56,16 +46,11 @@
           <ul class="advantages__list">
             <li class="advantages__item card">
               <div class="card__list card__list--town">
-                <svg class="card__triangle">
-                </svg>
                 <h3 class="card__title">Настоящий городок</h3>
                 <p class="card__number">— №1 —</p>
                 <p class="card__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="card__photo">
-                <picture>
-                  <img class="card__photo-image" src="http://placehold.it/150x100" alt="1">
-                </picture>
               </div>
               <ul class="card__item conveniences">
                 <li class="conveniences__item conveniences__item--home">
@@ -89,7 +74,6 @@
                 <p class="card__description card__description--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="card__photo">
-                <img class="card__photo-image" src="http://placehold.it/150x100" alt="1">
               </div>
             </li>
             <li class="advantages__item card">
@@ -124,9 +108,6 @@
         <section class="page-main__map map">
           <h2 class="visually-hidden">Карта</h2>
           <p class="map__wrapper">
-            <picture>
-              <img class="map__image" src="http://placehold.it/150x100" alt="1">
-            </picture>
           </p>
         </section>
       </main>
@@ -134,21 +115,21 @@
         <b class="page-footer__hashtag">#visitsedona</b>
         <ul class="page-footer__social social">
             <li class="social__item">
-              <a class="social__link social__link--twitter button" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в Твиттер">Твиттер
+              <a class="social__link social__link--twitter button" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в Твиттер">
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook button" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">Фейсбук
+              <a class="social__link social__link--facebook button" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы на Ютюб">Ютюб
+              <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы на Ютюб">
               </a>
             </li>
           </ul>
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">HTML Academy
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           </a>
         </div>
       </footer>

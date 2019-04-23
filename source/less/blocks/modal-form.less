@@ -1,0 +1,146 @@
+.modal-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5000;
+  display: none;
+  width: 320px;
+
+  padding-top: 47px;
+
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  transform: translate(-50%, -50%);
+}
+
+.modal-form--mistake {
+  display: none;
+  width: 320px;
+
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+
+.modal-form__title,
+.modal-form__item {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-form__title {
+  margin-bottom: 34px;
+  .title-font();
+
+  text-align: center;
+}
+
+.modal-form__item {
+  width: 216px;
+  .title-font();
+
+  margin: auto;
+  margin-bottom: 27px;
+  .form-font();
+
+  text-align: center;
+}
+
+.modal-form__wrapper {
+  padding: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  background-color: #f2f2f2;
+}
+
+.modal-form__button {
+  .default-style();
+
+  padding: 18px 65px;
+  text-align: center;
+}
+
+.modal-form__button--mistake {
+  width: 180px;
+  margin: auto;
+  padding: 18px 77px;
+  border: none;
+}
+
+.modal-form__item--send {
+  margin: auto;
+  margin-bottom: 37px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-form {
+    display: none;
+    width: 640px;
+    margin: auto;
+  }
+
+  .modal-form--mistake {
+    display: none;
+    box-sizing: border-box;
+    width: 400px;
+
+    margin: auto;
+    padding: 40px 61px 35px 57px;
+  }
+
+  .modal-form__title {
+    width: 345px;
+    margin: auto;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .modal-form__title--mistake {
+    width: 220px;
+
+    line-height: 40px;
+  }
+
+  .modal-form__item {
+    width: 285px;
+    margin-bottom: 39px;
+  }
+
+  .modal-form__button {
+    width: 458px;
+
+    margin: auto;
+  }
+
+  .modal-form__wrapper {
+    padding: 44px 92px;
+  }
+
+  .modal-form__button--mistake {
+    width: 272px;
+
+    margin: auto;
+  }
+
+  .modal-form__item--send {
+    width: 420px;
+
+    margin: auto;
+    margin-bottom: 37px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-form {
+    display: none;
+  }
+
+  .modal-form--mistake {
+    display: none;
+  }
+}

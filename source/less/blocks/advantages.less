@@ -1,0 +1,19 @@
+.advantages__list {
+  .default-style();
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    width: 1200px;
+  }
+}

@@ -1,0 +1,142 @@
+.conveniences {
+  margin: 0;
+  padding: 26px 0 37px 0;
+
+  list-style: none;
+}
+
+.conveniences__item {
+  position: relative;
+
+  width: 210px;
+
+  padding-top: 10px;
+  padding-left: 70px;
+  margin-bottom: 19px;
+}
+
+.conveniences__item svg {
+  position: absolute;
+  left: 21px;
+  top: 0;
+
+  width: 39px;
+  height: 37px;
+
+  fill: #81b3d2;
+}
+
+.conveniences__item--food svg {
+  top: 5px;
+}
+
+.conveniences__title,
+.conveniences__description {
+  .default-style();
+
+  text-align: left;
+}
+
+.conveniences__title {
+  margin-bottom: 13px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.conveniences__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.conveniences__item--food {
+  margin-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .conveniences {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    width: 768px;
+
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  .conveniences__item {
+    width: 33.33%;
+    box-sizing: border-box;
+
+    padding-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  .conveniences__item svg {
+    position: static;
+    top: 0;
+    left: 0;
+
+    align-items: flex-end;
+
+    width: auto;
+    height: auto;
+
+    margin-bottom: 22px;
+  }
+
+  .conveniences__title {
+    margin-bottom: 22px;
+
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+
+    text-align: center;
+  }
+
+  .conveniences__description {
+    width: 165px;
+
+    margin: auto;
+
+    text-align: center;
+  }
+
+  .conveniences__item--home {
+    order: 1;
+  }
+
+  .conveniences__item--food {
+    order: 2;
+  }
+
+  .conveniences__item--gifts {
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .conveniences {
+    width: 1200px;
+    padding-bottom: 80px;
+  }
+
+  .conveniences__item svg {
+    width: auto;
+    height: auto;
+  }
+
+  .conveniences__description {
+    width: 288px;
+  }
+
+  .conveniences__description--gifts {
+    width: 220px;
+  }
+}

@@ -1,0 +1,89 @@
+.console {
+  display: flex;
+  box-sizing: border-box;
+  width: 280px;
+  padding: 23px 23px 23px 25px;
+
+  background-color: #f2f2f2;
+}
+
+.console__item {
+  display: flex;
+  justify-content: space-around;
+
+  width: 38px;
+  height: 25px;
+  padding: 0;
+
+  background-color: transparent;
+
+  border: none;
+  opacity: 0.7;
+}
+
+.console__item--repeat {
+  width: 16px;
+  height: 20px;
+}
+
+.console__item--subtitles {
+  width: 32px;
+  height: 20px;
+
+  margin-left: auto;
+}
+
+.console__item--screen {
+  width: 20px;
+  height: 20px;
+
+  margin-left: 31px;
+}
+
+.console__item:hover {
+  opacity: 1;
+}
+
+.console__item:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .console {
+    width: 100%;
+    height: 93px;
+    padding: 36px 40px 38px 34px;
+
+    background-color: transparent;
+  }
+
+  .console__item {
+    opacity: 1;
+  }
+
+  .console__item--repeat path {
+    fill: #ffffff;
+  }
+
+  .console__item--subtitles path {
+    fill: #ffffff;
+  }
+
+  .console__item--screen polygon {
+    fill: #ffffff;
+  }
+
+  .console__item:hover {
+    opacity: 0.7;
+  }
+
+  .console__item:active {
+    opacity: 0.4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .console {
+    width: 100%;
+  }
+}

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -28,19 +29,12 @@
         </nav>
         <div class="page-header__wrapper">
           <a class="page-header__logo" href="index.html">
-            <svg class="page-header__logo page-header__logo--mobile">
-            </svg>
-            <svg class="page-header__logo page-header__logo--tablet">
-            </svg>
-            <svg class="page-header__logo page-header__logo--desktop">
-            </svg>
           </a>
         </div>
       </header>
       <main class="page-main">
         <header class="page-main__heading heading">
           <div class="heading__index heading__index--inside">
-            <img class="heading__image heading__image--inside" src="http://placehold.it/150x100" alt="1">
           </div>
           <div class="heading__block">
             <h1 class="heading__title heading__title--catpion">Фото и видео</h1>
@@ -52,7 +46,6 @@
             <ul class="photo__list">
               <li class="photo__item photo-block photo-block--header">
                 <a class="photo-block__link" href="#">
-                  <img class="photo-block__image photo-block__image--header" src="http://placehold.it/150x100" alt="1">
                 </a>
                 <div class="photo-block__sign photo-block__sign--header">
                   <div class="photo-block__description">
@@ -68,7 +61,6 @@
               </li>
               <li class="photo__item photo-block photo-block--card">
                 <a class="photo-block__link" href="#">
-                  <img class="photo-block__image" src="http://placehold.it/150x100" alt="1">
                 </a>
                 <div class="photo-block__sign">
                   <div class="photo-block__description">
@@ -76,7 +68,7 @@
                     <p class="photo-block__author">Автор фото: Сергей</p>
                   </div>
                   <div class="photo-block__count">
-                    <button class="photo-block__button" type="button" aria-label="Like">Like
+                    <button class="photo-block__button" type="button" aria-label="Like">
                     </button>
                     <p class="photo-block__numbers">143</p>
                   </div>
@@ -84,7 +76,6 @@
               </li>
               <li class="photo__item photo-block photo-block--card">
                 <a class="photo-block__link" href="#">
-                  <img class="photo-block__image" src="http://placehold.it/150x100" alt="1">
                 </a>
                 <div class="photo-block__sign">
                   <div class="photo-block__description">
@@ -100,7 +91,6 @@
               </li>
               <li class="photo__item photo-block photo-block--card">
                 <a class="photo-block__link" href="#">
-                  <img class="photo-block__image" src="http://placehold.it/150x100" alt="1">
                 </a>
                 <div class="photo-block__sign">
                   <div class="photo-block__description">
@@ -122,7 +112,6 @@
           <p class="video__offer">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="video__player player">
             <div class="player__image">
-              <img class="player__photo" src="http://placehold.it/150x100" alt="1">
             </div>
             <div class="player__controls controls">
               <div class="controls__rewind">
@@ -131,6 +120,9 @@
               </div>
               <div class="controls__console console">
                 <button class="console__item console__item--repeat" type="button" aria-label="Повтор">
+                  <svg version="1.0" id="repeat" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">
+                    <path fill="#333333" d="M8,4V0L3,5l5,5V6c3.315,0,6,2.686,6,6s-2.685,6-6,6s-6-2.686-6-6H0c0,4.42,3.58,8,8,8s8-3.58,8-8S12.42,4,8,4z"/>
+                  </svg>
                 </button>
                 <button class="console__item console__item--subtitles" type="button" aria-label="Субтитры">
                 </button>

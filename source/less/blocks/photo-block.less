@@ -1,0 +1,178 @@
+.photo-block {
+  padding: 22px 20px 17px 20px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.photo-block__link {
+  display: block;
+}
+
+.photo-block__sign {
+  padding-top: 15px;
+}
+
+.photo-block__title,
+.photo-block__author,
+.photo-block__numbers,
+.photo-block__button {
+  margin: 0;
+  padding: 0;
+}
+
+.photo-block__title,
+.photo-block__numbers {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.photo-block__author {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: none;
+  text-align: left;
+}
+
+.photo-block__count {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70px;
+}
+
+.photo-block__button {
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  opacity: 0.3;
+}
+
+.photo-block__button svg {
+  width: 23px;
+  height: 21px;
+  margin-right: 15px;
+}
+
+.photo-block__numbers {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-block {
+    border: none;
+  }
+
+  .photo-block--header {
+    width: 648px;
+    padding: 0;
+  }
+
+  .photo-block__title,
+  .photo-block__author {
+    margin: 0;
+  }
+
+  .photo-block__sign {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 17px 20px 15px 20px;
+
+    background-color: #f2f2f2;
+  }
+
+  .photo-block__sign--header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .photo-block__description {
+    width: 200px;
+    text-align: left;
+  }
+
+  .photo-block--card {
+    width: 324px;
+
+    padding: 0;
+  }
+
+  .photo-block__image {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo-block__image--header {
+    width: 648px;
+    height: 400px;
+  }
+
+  .photo-block__count {
+    display: flex;
+    width: 65px;
+  }
+
+  .photo-block__button {
+    margin-right: 10px;
+  }
+
+  .photo-block__button svg {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-block {
+    position: relative;
+    width: 1200px;
+    padding: 0;
+  }
+
+  .photo-block--card {
+    width: 400px;
+  }
+
+  .photo-block__image {
+    width: 1200px;
+  }
+
+  .photo-block__sign {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 400px;
+
+
+    padding: 17px 20px 15px 17px;
+
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-block__sign--header {
+    width: 1200px;
+  }
+
+  .photo-block__description,
+  .photo-block__count {
+    color: @white;
+  }
+
+  .photo-block__like path {
+    fill: @white;
+  }
+
+  .photo-block__button {
+    opacity: 1;
+  }
+}

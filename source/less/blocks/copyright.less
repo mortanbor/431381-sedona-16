@@ -1,0 +1,48 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  margin: 0 auto;
+}
+
+.copyright__text,
+.copyright__link {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.copyright__text {
+  display: flex;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.copyright__link {
+  display: flex;
+
+  width: 27px;
+  height: 34px;
+}
+
+.copyright__link:hover path {
+  fill: rgb(129, 179, 210);
+}
+
+.copyright__link:active path {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    margin: 0;
+  }
+}
