@@ -1,13 +1,18 @@
 .form-block {
   position: relative;
 
-  display: flex;
-  box-sizing: border-box;
-  align-items: center;
-
   .default-style();
-  padding: 18px 0 24px 0;
   border: none;
+
+  padding: 20px 0 25px 0;
+}
+
+.form-block__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .form-block::before {
@@ -90,9 +95,16 @@
   color: @black;
 }
 
-.form-block__label--end,
-.form-block__input--end {
+.form-block__list--introduce:last-child {
   margin-bottom: 0;
+}
+
+.form-block__input--introduce {
+  width: 193px;
+}
+
+.form-block__input--name {
+  width: 231px;
 }
 
 .form-block__input--contacts {
@@ -112,7 +124,6 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-  margin-bottom: 12px;
 }
 
 .form-block__item--telephone::before {
@@ -186,10 +197,6 @@
 
 .form-block__list > .form-block__item--contacts:nth-last-child(1) {
   margin-bottom: 0;
-}
-
-.form-block--contacts {
-  padding-bottom: 26px;
 }
 
 .form-block__item--radio {
@@ -303,7 +310,7 @@
 }
 
 .form-block--check {
-  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .form-block__input--check + .form-block__label--check::before {
@@ -369,7 +376,7 @@
     display: none;
   }
 
-  .form-block--radio::before{
+  .form-block--radio::before {
     content: "";
 
     position: absolute;
@@ -417,10 +424,24 @@
     top: 75px;
   }
 
+  .form-block__list--introduce {
+    box-sizing: border-box;
+    width: 266px;
+  }
+
+  .form-block__input--introduce {
+    width: 178px;
+  }
+
+  .form-block__input--name {
+    width: 217px;
+  }
+
   .form-block--radio {
     width: 324px;
 
     padding: 0;
+    margin-right: 57px;
     margin-bottom: 70px;
 
     order: -1;
@@ -449,10 +470,9 @@
   }
 
   .form-block--introduce {
-    width: 324px;
+    width: 266px;
 
     padding: 0;
-    padding-left: 58px;
     margin-bottom: 70px;
   }
 
@@ -514,7 +534,7 @@
   .form-block__label--check {
     padding-top: 12px;
     padding-bottom: 18px;
-}
+  }
 
   .form-block__title--check {
     width: 290px;
@@ -557,12 +577,24 @@
     width: 480px;
 
     padding-left: 0;
+    margin-right: 80px;
   }
 
   .form-block--introduce {
-    width: 480px;
+    width: 400px;
+  }
 
-    padding-left: 80px;
+  .form-block__input--introduce {
+    width: 310px;
+  }
+
+  .form-block__list--introduce {
+    box-sizing: border-box;
+    width: 400px;
+  }
+
+  .form-block__input--name {
+    width: 350px;
   }
 
   .form-block__title--radio {
@@ -667,7 +699,7 @@
 
   .form-block--comment {
     padding-bottom: 56px;
-}
+  }
 
   .form-block__item--telephone::before {
     top: 0;
@@ -689,7 +721,7 @@
     right: 18px;
   }
 
-  .form-block--radio::before{
+  .form-block--radio::before {
     content: "";
 
     position: absolute;
