@@ -118,6 +118,6 @@ gulp.task("refresh", function (done) {
   done();
 });
 
-gulp.task("dev", gulp.series(gulp.parallel("copy", "css", "js", "sprite"), "html"));
-gulp.task("build", gulp.series("clean", "images", "dev", "webp"));
+gulp.task("dev", gulp.series("clean", gulp.parallel("copy", "css", "js", "sprite", "webp"), "html"));
+gulp.task("build", gulp.series("images", "dev"));
 gulp.task("start", gulp.series("dev", "server"));
