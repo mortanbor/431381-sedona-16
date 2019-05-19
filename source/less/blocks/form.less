@@ -15,9 +15,19 @@
 
   .default-style();
   margin: auto;
-  padding: 17px 40px 18px 50px;
+  padding: 16px 40px 16px 50px;
 
   text-align: center;
+}
+
+.form__button:hover,
+.form__button:focus {
+  background-color: @hover;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: @down;
 }
 
 .form__note {
@@ -44,7 +54,7 @@
 
     .default-style();
     margin: 0;
-    padding: 14px 0 18px 0;
+    padding: 16px 0;
 
     text-align: center;
   }
