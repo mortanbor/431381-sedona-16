@@ -3,7 +3,6 @@
   top: 50%;
   left: 50%;
   z-index: 5000;
-  display: none;
   width: 320px;
 
   padding-top: 47px;
@@ -16,10 +15,13 @@
 
 .modal-form--mistake {
   display: none;
-  width: 320px;
 
   padding-top: 40px;
   padding-bottom: 35px;
+}
+
+.modal-form--send {
+  display: none;
 }
 
 .modal-form__title,
@@ -75,13 +77,11 @@
 
 @media (min-width: @tablet-width) {
   .modal-form {
-    display: none;
     width: 640px;
     margin: auto;
   }
 
   .modal-form--mistake {
-    display: none;
     box-sizing: border-box;
     width: 400px;
 
@@ -132,15 +132,5 @@
 
     margin: auto;
     margin-bottom: 37px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .modal-form {
-    display: none;
-  }
-
-  .modal-form--mistake {
-    display: none;
   }
 }

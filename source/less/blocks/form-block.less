@@ -75,6 +75,7 @@
   box-sizing: border-box;
 
   width: 100%;
+  height: 58px;
 
   margin-left: 14px;
   padding-top: 15px;
@@ -199,6 +200,14 @@
   margin-bottom: 0;
 }
 
+.form-block__list--radio {
+  width: 262px;
+}
+
+.form-block__list--check {
+  width: 280px;
+}
+
 .form-block__item--radio {
   position: relative;
 
@@ -218,7 +227,11 @@
 
 .form-block__item--check {
   position: relative;
+  justify-content: flex-start;
 
+  width: 202px;
+
+  padding-right: 78px;
   margin-bottom: 24px;
 
   .title-font();
@@ -242,6 +255,9 @@
 }
 
 .form-block__title--check {
+  width: 240px;
+
+  margin-left: 20px;
   margin-bottom: 20px;
 }
 
@@ -527,7 +543,11 @@
   }
 
   .form-block__item--check {
-    width: 260px;
+    justify-content: flex-start;
+
+    width: 202px;
+
+    padding-right: 58px;
     margin-bottom: 30px;
   }
 
