@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -96,15 +98,15 @@
               <h2 class="form-block__title form-block__title--radio">Ваше общее впечатление:</h2>
               <ul class="form-block__list form-block__list--radio">
                 <li class="form-block__item form-block__item--radio">
-                  <input class="visually-hidden form-block__input--radio" type="radio" id="plus-filter" name="impression" value="positive" checked>
+                  <input class="visually-hidden form-block__input form-block__input--radio" type="radio" id="plus-filter" name="impression" value="positive" checked>
                   <label class="form-block__label form-block__label--radio" for="plus-filter">Скорее положительное</label>
                 </li>
                 <li class="form-block__item form-block__item--radio">
-                  <input class="visually-hidden form-block__input--radio" type="radio" id="minus-filter" name="impression" value="negative">
+                  <input class="visually-hidden form-block__input form-block__input--radio" type="radio" id="minus-filter" name="impression" value="negative">
                   <label class="form-block__label form-block__label--radio" for="minus-filter">Скорее отрицательное</label>
                 </li>
                 <li class="form-block__item form-block__item--radio">
-                  <input class="visually-hidden form-block__input--radio" type="radio" id="hard-filter" name="impression" value="hard">
+                  <input class="visually-hidden form-block__input form-block__input--radio" type="radio" id="hard-filter" name="impression" value="hard">
                   <label class="form-block__label form-block__label--radio" for="hard-filter">Затрудняюсь ответить</label>
                 </li>
               </ul>
@@ -115,19 +117,19 @@
               <h2 class="form-block__title form-block__title--check">Посещенные достопримечательности:</h2>
               <ul class="form-block__list form-block__list--check">
                 <li class="form-block__item form-block__item--check">
-                  <input class="visually-hidden form-block__input--check" type="checkbox" id="visit-bridge" name="devil bridge" checked>
+                  <input class="visually-hidden form-block__input form-block__input--check" type="checkbox" id="visit-bridge" name="devil bridge" checked>
                   <label class="form-block__label form-block__label--check" for="visit-bridge">Мост Дьявола</label>
                 </li>
                 <li class="form-block__item form-block__item--check">
-                  <input class="visually-hidden form-block__input--check" type="checkbox" id="visit-bell" name="mountain bell" checked>
+                  <input class="visually-hidden form-block__input form-block__input--check" type="checkbox" id="visit-bell" name="mountain bell" checked>
                   <label class="form-block__label form-block__label--check" for="visit-bell">Гора-Колокол</label>
                 </li>
                 <li class="form-block__item form-block__item--check">
-                  <input class="visually-hidden form-block__input--check" type="checkbox" id="visit-park" name="slide park" checked>
+                  <input class="visually-hidden form-block__input form-block__input--check" type="checkbox" id="visit-park" name="slide park" checked>
                   <label class="form-block__label form-block__label--check" for="visit-park">Слайд-парк</label>
                 </li>
                 <li class="form-block__item form-block__item--check">
-                  <input class="visually-hidden form-block__input--check" type="checkbox" id="visit-rocks" name="red rocks">
+                  <input class="visually-hidden form-block__input form-block__input--check" type="checkbox" id="visit-rocks" name="red rocks">
                   <label class="form-block__label form-block__label--check" for="visit-rocks">Красные скалы</label>
                 </li>
               </ul>
